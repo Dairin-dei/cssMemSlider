@@ -101,6 +101,37 @@ input:checked + label:before {
 
 /*radio*/
 
-#id-low:checked .img{
+@media (max-width: 1024px){
+
+    label:before{
+        width: 15px;
+        height: 15px;
+        border: 2px solid var(--cl-blue);
+    }
+  p{  
+    font-size: 28px;
+  }  
+  .controls{
+    max-width: 150px;
+}
+}
+
+@media (max-width: 768px){
+    .bottom-part {
+        flex-direction:column-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+    }  
+    
+    label:before{
+        width: 10px;
+        height: 10px;
+        border: 1px solid var(--cl-blue);
+    }
+
+    .controls{
+        margin: 0 auto;
+        max-width: 100px;
+    }
 
 }
